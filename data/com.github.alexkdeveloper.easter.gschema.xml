@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist gettext-domain="easter">
+	<schema id="com.github.alexkdeveloper.easter" path="/com/github/alexkdeveloper/easter/">
+	</schema>
+</schemalist>

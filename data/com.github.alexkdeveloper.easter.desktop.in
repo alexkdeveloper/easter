@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Date of Catholic Easter
+Comment=Calculate the date of Catholic Easter
+Exec=com.github.alexkdeveloper.easter
+Icon=com.github.alexkdeveloper.easter
+Terminal=false
+Type=Application
+Categories=GTK;Education;
+StartupNotify=true
