@@ -1,0 +1,33 @@
+name: easter
+grade: stable
+adopt-info: easter
+license: GPL-3.0+
+
+base: core20
+confinement: strict
+
+apps:
+  easter:
+    command: usr/bin/com.github.alexkdeveloper.easter
+    extensions: [gnome-3-38]
+    slots:
+      - dbus-daemon
+    common-id: com.github.alexkdeveloper.easter
+
+parts:
+  easter:
+    plugin: meson
+    source: https://github.com/alexkdeveloper/easter.git
+    source-branch: main
+    meson-parameters: [--prefix=/snap/easter/current/usr]
+    build-packages:
+      - gettext
+    organize:
+      snap/easter/current/usr: usr
+    parse-info: [usr/share/appdata/com.github.alexkdeveloper.easter.appdata.xml]
+
+slots:
+  dbus-daemon:
+    interface: dbus
+    bus: session
+    name: com.github.alexkdeveloper.easter
