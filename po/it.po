@@ -21,7 +21,7 @@ msgstr ""
 #: data/com.github.alexkdeveloper.easter.desktop.in:3
 #: data/com.github.alexkdeveloper.easter.appdata.xml.in:6
 msgid "Date of Catholic Easter"
-msgstr Data della Pasqua Cattolica"
+msgstr "Data della Pasqua Cattolica"
 
 #: data/com.github.alexkdeveloper.easter.desktop.in:4
 #: data/com.github.alexkdeveloper.easter.appdata.xml.in:7
