@@ -16,6 +16,8 @@ easter_sources += gnome.compile_resources('easter-resources',
 )
 
 executable('com.github.alexkdeveloper.easter', easter_sources,
-  vala_args: '--target-glib=2.50',  dependencies: easter_deps,
+include_directories: config_h_dir, 
+vala_args: ['--target-glib=2.50', meson.source_root() + '/src/config.vapi'], 
+c_args: ['-include', 'config.h'], dependencies: easter_deps,
   install: true,
 )
