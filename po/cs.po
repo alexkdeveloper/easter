@@ -1,0 +1,53 @@
+# CZECH TRANSLATION FOR EASTER.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the easter package.
+# MartinIIOT https://github.com/MartinIIOT, 2022.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: easter\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-06-01 19:15+0200\n"
+"PO-Revision-Date: 2022-06-01 19:15+0100\n"
+"Last-Translator: vikdevelop https://github.com/vikdevelop\n"
+"Language-Team: Czech\n"
+"Language: cs\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.0.1\n"
+
+#: data/com.github.alexkdeveloper.easter.desktop.in:3
+#: data/com.github.alexkdeveloper.easter.appdata.xml.in:6
+msgid "Date of Catholic Easter"
+msgstr "Datum katolických Velikonoc"
+
+#: data/com.github.alexkdeveloper.easter.desktop.in:4
+#: data/com.github.alexkdeveloper.easter.appdata.xml.in:7
+msgid "Calculate the date of Catholic Easter"
+msgstr "Výpočet data katolických velikonoc"
+
+#: data/com.github.alexkdeveloper.easter.appdata.xml.in:9
+msgid "Program for calculating the date of Catholic Easter"
+msgstr "Program pro výpočet dáta katolíckých velikonoc"
+
+#: data/com.github.alexkdeveloper.easter.appdata.xml.in:14
+msgid "Alex Kryuchkov"
+msgstr "Alex Kryuchkov"
+
+#: src/window.ui:33
+msgid "Enter the year number"
+msgstr "Zadejte rok"
+
+#: src/window.ui:43
+msgid "CALCULATE"
+msgstr "VYPOČÍTAT"
+
+#: src/window.ui:65
+msgid "Welcome!"
+msgstr "Vítejte!"
+
+#: src/window.ui:90
+msgid "Visit Wikipedia"
+msgstr "Navštívte Wikipedii"
