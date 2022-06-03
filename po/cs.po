@@ -50,4 +50,4 @@ msgstr "Vítejte!"
 
 #: src/window.ui:90
 msgid "Visit Wikipedia"
-msgstr "Navštívte Wikipedii"
+msgstr "Navštivte Wikipedii"
