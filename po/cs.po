@@ -1,7 +1,7 @@
 # CZECH TRANSLATION FOR EASTER.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the easter package.
-# MartinIIOT https://github.com/MartinIIOT, 2022.
+# vikdevelop https://github.com/vikdevelop, 2022.
 #
 msgid ""
 msgstr ""
@@ -21,16 +21,16 @@ msgstr ""
 #: data/com.github.alexkdeveloper.easter.desktop.in:3
 #: data/com.github.alexkdeveloper.easter.appdata.xml.in:6
 msgid "Date of Catholic Easter"
-msgstr "Datum katolických Velikonoc"
+msgstr "Datum Katolických Velikonoc"
 
 #: data/com.github.alexkdeveloper.easter.desktop.in:4
 #: data/com.github.alexkdeveloper.easter.appdata.xml.in:7
 msgid "Calculate the date of Catholic Easter"
-msgstr "Výpočet data katolických velikonoc"
+msgstr "Výpočet data Katolických Velikonoc"
 
 #: data/com.github.alexkdeveloper.easter.appdata.xml.in:9
 msgid "Program for calculating the date of Catholic Easter"
-msgstr "Program pro výpočet dáta katolíckých velikonoc"
+msgstr "Program pro výpočet data Katolických Velikonoc"
 
 #: data/com.github.alexkdeveloper.easter.appdata.xml.in:14
 msgid "Alex Kryuchkov"
@@ -50,4 +50,4 @@ msgstr "Vítejte!"
 
 #: src/window.ui:90
 msgid "Visit Wikipedia"
-msgstr "Navštívte Wikipedii"
+msgstr "Navštivte Wikipedii"
