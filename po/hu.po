@@ -1,0 +1,47 @@
+# HUNGARIAN TRANSLATION FOR EASTER.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the easter package.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: easter\n"
+"Language-Team: Hungarian\n"
+"Language: hu\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: data/com.github.alexkdeveloper.easter.desktop.in:3
+#: data/com.github.alexkdeveloper.easter.appdata.xml.in:6
+msgid "Date of Catholic Easter"
+msgstr "A katolikus húsvét dátuma"
+
+#: data/com.github.alexkdeveloper.easter.desktop.in:4
+#: data/com.github.alexkdeveloper.easter.appdata.xml.in:7
+msgid "Calculate the date of Catholic Easter"
+msgstr "A katolikus húsvét dátumának kiszámítása"
+
+#: data/com.github.alexkdeveloper.easter.appdata.xml.in:9
+msgid "Program for calculating the date of Catholic Easter"
+msgstr "Alkalmazás a katolikus húsvét dátumának kiszámításához"
+
+#: data/com.github.alexkdeveloper.easter.appdata.xml.in:14
+msgid "Alex Kryuchkov"
+msgstr "Kryuchkov Sándor"
+
+#: src/window.ui:33
+msgid "Enter the year number"
+msgstr "Adja meg az évszámot"
+
+#: src/window.ui:43
+msgid "CALCULATE"
+msgstr "Kiszámítás"
+
+#: src/window.ui:65
+msgid "Welcome!"
+msgstr "Isten hozta!"
+
+#: src/window.ui:90
+msgid "Visit Wikipedia"
+msgstr "Wikipédia meglátogassa"
