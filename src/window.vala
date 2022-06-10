@@ -43,13 +43,13 @@ namespace Easter {
 		}
 		private void on_calculate(){
 		   if(year.get_text().strip().length == 0){
-             alert("Enter the year number");
+             alert(_("Enter the year number"));
              year.grab_focus();
              return;
            }
              int y = int.parse(year.get_text());
              if(y <= 0){
-                 alert("Please enter a valid year number");
+                 alert(_("Please enter a valid year number"));
                  year.grab_focus();
                  return;
              }
@@ -68,10 +68,10 @@ namespace Easter {
              string h;
              if(f <= 9){
                  g = 22 + d + e;
-                 h = "March";
+                 h = _("March");
              }else{
                  g = d + e - 9;
-                 h = "April";
+                 h = _("April");
              }
              if(d == 29 && e == 6){
                  g = 19;
@@ -93,8 +93,8 @@ namespace Easter {
           });
         }
 	    private void on_start_browser_clicked(){
-            var start_browser_dialog = new Gtk.MessageDialog(this, Gtk.DialogFlags.MODAL,Gtk.MessageType.QUESTION, Gtk.ButtonsType.OK_CANCEL, "Do you want to visit Wikipedia?");
-            start_browser_dialog.set_title("Question");
+            var start_browser_dialog = new Gtk.MessageDialog(this, Gtk.DialogFlags.MODAL,Gtk.MessageType.QUESTION, Gtk.ButtonsType.OK_CANCEL, _("Do you want to visit Wikipedia?"));
+            start_browser_dialog.set_title(_("Question"));
             Gtk.ResponseType result = (Gtk.ResponseType)start_browser_dialog.run ();
             start_browser_dialog.destroy();
             if(result==Gtk.ResponseType.OK){
@@ -107,7 +107,7 @@ namespace Easter {
         }
 		private void alert (string str){
           var dialog_alert = new Gtk.MessageDialog(this, Gtk.DialogFlags.MODAL, Gtk.MessageType.INFO, Gtk.ButtonsType.OK, str);
-          dialog_alert.set_title("Message");
+          dialog_alert.set_title(_("Message"));
           dialog_alert.run();
           dialog_alert.destroy();
        }
