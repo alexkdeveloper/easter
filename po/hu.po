@@ -22,7 +22,7 @@ msgstr ""
 
 #: window.ui:33 window.vala:46
 msgid "Enter the year number"
-msgstr ""
+msgstr "Adja meg az évszámot"
 
 #: window.ui:43
 msgid "CALCULATE"
@@ -38,30 +38,30 @@ msgstr "Wikipédia meglátogassa"
 
 #: window.vala:52
 msgid "Please enter a valid year number"
-msgstr "Adja meg az évszámot"
+msgstr "Adjon meg egy érvényes évszámot"
 
 #: window.vala:71
 msgid "March"
-msgstr ""
+msgstr "március"
 
 #: window.vala:74
 msgid "April"
-msgstr ""
+msgstr "április"
 
 #: window.vala:96
 msgid "Do you want to visit Wikipedia?"
-msgstr ""
+msgstr "Szeretné meglátogatni a Wikipédia webhelyet?"
 
 #: window.vala:97
 msgid "Question"
-msgstr ""
+msgstr "Kérdés"
 
 #: window.vala:110
 msgid "Message"
-msgstr ""
+msgstr "Üzenet"
 
 msgid "Date of Catholic Easter"
-msgstr "A katolikus húsvét dátuma"
+msgstr "Katolikus húsvét dátuma"
 
 msgid "Calculate the date of Catholic Easter"
 msgstr "A katolikus húsvét dátumának kiszámítása"
