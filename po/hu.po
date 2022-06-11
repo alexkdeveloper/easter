@@ -60,12 +60,16 @@ msgstr "Kérdés"
 msgid "Message"
 msgstr "Üzenet"
 
+#: data/com.github.alexkdeveloper.easter.desktop.in:4
+#: data/com.github.alexkdeveloper.easter.appdata.xml.in:7
 msgid "Date of Catholic Easter"
 msgstr "Katolikus húsvét dátuma"
 
+#: data/com.github.alexkdeveloper.easter.desktop.in:4
+#: data/com.github.alexkdeveloper.easter.appdata.xml.in:7
 msgid "Calculate the date of Catholic Easter"
 msgstr "A katolikus húsvét dátumának kiszámítása"
 
+#: data/com.github.alexkdeveloper.easter.appdata.xml.in:9
 msgid "Program for calculating the date of Catholic Easter"
 msgstr "Alkalmazás a katolikus húsvét dátumának kiszámításához"
-
