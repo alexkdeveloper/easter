@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: easter\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-04-29 18:05+0200\n"
-"PO-Revision-Date: 2022-04-29 18:07+0200\n"
+"POT-Creation-Date: 2022-06-11 12:21+0200\n"
+"PO-Revision-Date: 2022-06-11 12:22+0200\n"
 "Last-Translator: Heimen Stoffels <vistausss@fastmail.com>\n"
 "Language-Team: \n"
 "Language: nl\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.0.1\n"
+"X-Generator: Poedit 3.1\n"
 
 #: data/com.github.alexkdeveloper.easter.desktop.in:3
 #: data/com.github.alexkdeveloper.easter.appdata.xml.in:6
@@ -36,7 +36,39 @@ msgstr "Een toepassing voor het berekenen van de datum van Katholiek Pasen"
 msgid "Alex Kryuchkov"
 msgstr "Alex Kryuchkov"
 
-#: src/window.ui:33
+#: data/com.github.alexkdeveloper.easter.appdata.xml.in:28
+msgid "Update Hungarian translation"
+msgstr "Bijgewerkt: Hongaarse vertaling"
+
+#: data/com.github.alexkdeveloper.easter.appdata.xml.in:35
+msgid "Added Hungarian translation"
+msgstr "Nieuw: Hongaarse vertaling"
+
+#: data/com.github.alexkdeveloper.easter.appdata.xml.in:42
+msgid "Update Czech translation"
+msgstr "Bijgewerkt: Tsjechische vertaling"
+
+#: data/com.github.alexkdeveloper.easter.appdata.xml.in:49
+msgid "Added Czech translation"
+msgstr "Nieuw: Tsjechische vertaling"
+
+#: data/com.github.alexkdeveloper.easter.appdata.xml.in:56
+msgid "Added Italian translation"
+msgstr "Nieuw: Italiaanse vertaling"
+
+#: data/com.github.alexkdeveloper.easter.appdata.xml.in:57
+msgid "Added Slovakian translation"
+msgstr "Nieuw: Slowaakse vertaling"
+
+#: data/com.github.alexkdeveloper.easter.appdata.xml.in:64
+msgid "Added Dutch translation"
+msgstr "Nieuw: Nederlandse vertaling"
+
+#: data/com.github.alexkdeveloper.easter.appdata.xml.in:71
+msgid "Initial release"
+msgstr "De allereerste versie"
+
+#: src/window.ui:33 src/window.vala:46
 msgid "Enter the year number"
 msgstr "Voer een jaartal in"
 
@@ -51,3 +83,27 @@ msgstr "Welkom!"
 #: src/window.ui:90
 msgid "Visit Wikipedia"
 msgstr "Open Wikipedia"
+
+#: src/window.vala:52
+msgid "Please enter a valid year number"
+msgstr "Voer een geldig jaartal in"
+
+#: src/window.vala:71
+msgid "March"
+msgstr "maart"
+
+#: src/window.vala:74
+msgid "April"
+msgstr "april"
+
+#: src/window.vala:96
+msgid "Do you want to visit Wikipedia?"
+msgstr "Wilt u Wikipedia openen?"
+
+#: src/window.vala:97
+msgid "Question"
+msgstr "Vraag"
+
+#: src/window.vala:110
+msgid "Message"
+msgstr "Bericht"
