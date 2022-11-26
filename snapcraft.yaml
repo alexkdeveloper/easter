@@ -3,13 +3,13 @@ grade: stable
 adopt-info: easter
 license: GPL-3.0+
 
-base: core20
+base: core22
 confinement: strict
 
 apps:
   easter:
     command: usr/bin/com.github.alexkdeveloper.easter
-    extensions: [gnome-3-38]
+    extensions: [gnome]
     slots:
       - dbus-daemon
     common-id: com.github.alexkdeveloper.easter
