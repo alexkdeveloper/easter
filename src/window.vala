@@ -18,7 +18,7 @@
 
 namespace Easter {
 	[GtkTemplate (ui = "/com/github/alexkdeveloper/easter/window.ui")]
-	public class Window : Gtk.ApplicationWindow {
+	public class Window : Adw.ApplicationWindow {
 	    [GtkChild]
 	    private unowned Gtk.Button start_browser;
 		[GtkChild]
@@ -28,28 +28,25 @@ namespace Easter {
 		[GtkChild]
 		private unowned Gtk.Label result;
 
-		public Window (Gtk.Application app) {
+		public Window (Adw.Application app) {
 			Object (application: app);
 			year.set_icon_from_icon_name (Gtk.EntryIconPosition.SECONDARY, "edit-clear-symbolic");
             year.icon_press.connect ((pos, event) => {
-          if (pos == Gtk.EntryIconPosition.SECONDARY) {
               year.set_text("");
               year.grab_focus();
-           }
         });
 		calculate.clicked.connect(on_calculate);
 		start_browser.clicked.connect(on_start_browser_clicked);
-		add_shortcut();
 		}
 		private void on_calculate(){
 		   if(year.get_text().strip().length == 0){
-             alert(_("Enter the year number"));
+             alert(_("Enter the year number"),"");
              year.grab_focus();
              return;
            }
              int y = int.parse(year.get_text());
              if(y <= 0){
-                 alert(_("Please enter a valid year number"));
+                 alert(_("Please enter a valid year number"),"");
                  year.grab_focus();
                  return;
              }
@@ -80,36 +77,30 @@ namespace Easter {
              }
              result.set_text(h+" "+g.to_string());
 		}
-        private void add_shortcut () {
-           key_press_event.connect ((e) => {
-           switch (e.keyval) {
-              case Gdk.Key.KP_Enter:
-                 if (e.state != 0) {
-                    on_calculate();
-                 }
-                 break;
-            }
-            return false;
-          });
-        }
 	    private void on_start_browser_clicked(){
-            var start_browser_dialog = new Gtk.MessageDialog(this, Gtk.DialogFlags.MODAL,Gtk.MessageType.QUESTION, Gtk.ButtonsType.OK_CANCEL, _("Do you want to visit Wikipedia?"));
-            start_browser_dialog.set_title(_("Question"));
-            Gtk.ResponseType result = (Gtk.ResponseType)start_browser_dialog.run ();
-            start_browser_dialog.destroy();
-            if(result==Gtk.ResponseType.OK){
-            try{
-               Gtk.show_uri_on_window(this, "https://en.wikipedia.org/wiki/Easter", Gdk.CURRENT_TIME);
-             }catch(Error e){
-                alert("Error!\n"+e.message);
-            }
-          }
+          var start_browser_dialog = new Adw.MessageDialog(this, _("Do you want to visit Wikipedia?"), "");
+            start_browser_dialog.add_response("cancel", _("_Cancel"));
+            start_browser_dialog.add_response("ok", _("_OK"));
+            start_browser_dialog.set_default_response("ok");
+            start_browser_dialog.set_close_response("cancel");
+            start_browser_dialog.set_response_appearance("ok", SUGGESTED);
+            start_browser_dialog.show();
+            start_browser_dialog.response.connect((response) => {
+                if (response == "ok") {
+                   Gtk.show_uri(this, "https://en.wikipedia.org/wiki/Easter", Gdk.CURRENT_TIME);
+                }
+                start_browser_dialog.close();
+            });
         }
-		private void alert (string str){
-          var dialog_alert = new Gtk.MessageDialog(this, Gtk.DialogFlags.MODAL, Gtk.MessageType.INFO, Gtk.ButtonsType.OK, str);
-          dialog_alert.set_title(_("Message"));
-          dialog_alert.run();
-          dialog_alert.destroy();
-       }
+		  private void alert (string heading, string body){
+            var dialog_alert = new Adw.MessageDialog(this, heading, body);
+            if (body != "") {
+                dialog_alert.set_body(body);
+            }
+            dialog_alert.add_response("ok", _("_OK"));
+            dialog_alert.set_response_appearance("ok", SUGGESTED);
+            dialog_alert.response.connect((_) => { dialog_alert.close(); });
+            dialog_alert.show();
+        }
 	}
 }

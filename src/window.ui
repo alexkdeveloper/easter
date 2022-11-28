@@ -1,101 +1,64 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!-- Generated with glade 3.39.0 -->
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- Created with Cambalache 0.10.3 -->
 <interface>
-  <requires lib="gtk+" version="3.24"/>
-  <object class="GtkImage" id="image1">
-    <property name="visible">True</property>
-    <property name="can-focus">False</property>
-    <property name="icon-name">web-browser-symbolic</property>
-  </object>
-  <template class="EasterWindow" parent="GtkApplicationWindow">
-    <property name="can-focus">False</property>
-    <property name="default-width">350</property>
+  <!-- interface-name window.ui -->
+  <template class="EasterWindow" parent="AdwApplicationWindow">
+    <property name="default-width">500</property>
     <property name="default-height">300</property>
     <child>
       <object class="GtkBox">
-        <property name="visible">True</property>
-        <property name="can-focus">False</property>
-        <property name="margin-start">6</property>
-        <property name="margin-end">6</property>
-        <property name="margin-top">6</property>
-        <property name="margin-bottom">6</property>
         <property name="orientation">vertical</property>
-        <property name="spacing">6</property>
+        <child>
+          <object class="AdwHeaderBar">
+            <property name="title-widget">
+              <object class="AdwWindowTitle">
+                <property name="title" translatable="yes">Date of Catholic Easter</property>
+              </object>
+            </property>
+            <child type="end">
+              <object class="GtkButton" id="start_browser">
+                <property name="icon-name">web-browser-symbolic</property>
+                <property name="tooltip-text" translatable="yes">Visit Wikipedia</property>
+              </object>
+            </child>
+          </object>
+        </child>
         <child>
           <object class="GtkBox">
-            <property name="visible">True</property>
-            <property name="can-focus">False</property>
+            <property name="margin-bottom">6</property>
+            <property name="margin-end">6</property>
+            <property name="margin-start">6</property>
+            <property name="margin-top">6</property>
+            <property name="orientation">vertical</property>
             <property name="spacing">6</property>
             <child>
-              <object class="GtkEntry" id="year">
-                <property name="visible">True</property>
-                <property name="can-focus">True</property>
-                <property name="tooltip-text" translatable="yes">Enter the year number</property>
+              <object class="GtkBox">
+                <property name="spacing">6</property>
+                <child>
+                  <object class="GtkEntry" id="year">
+                    <property name="hexpand">True</property>
+                    <property name="tooltip-text" translatable="yes">Enter the year number</property>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkButton" id="calculate">
+                    <property name="label" translatable="yes">CALCULATE</property>
+                  </object>
+                </child>
               </object>
-              <packing>
-                <property name="expand">True</property>
-                <property name="fill">True</property>
-                <property name="position">0</property>
-              </packing>
             </child>
             <child>
-              <object class="GtkButton" id="calculate">
-                <property name="label" translatable="yes">CALCULATE</property>
-                <property name="visible">True</property>
-                <property name="can-focus">True</property>
-                <property name="receives-default">True</property>
+              <object class="GtkLabel" id="result">
+                <property name="css-classes">title-1</property>
+                <property name="label" translatable="yes">Welcome!</property>
+                <property name="selectable">True</property>
+                <property name="vexpand">True</property>
+                <property name="can-focus">False</property>
               </object>
-              <packing>
-                <property name="expand">False</property>
-                <property name="fill">True</property>
-                <property name="position">1</property>
-              </packing>
             </child>
           </object>
-          <packing>
-            <property name="expand">False</property>
-            <property name="fill">True</property>
-            <property name="position">0</property>
-          </packing>
-        </child>
-        <child>
-          <object class="GtkLabel" id="result">
-            <property name="visible">True</property>
-            <property name="can-focus">False</property>
-            <property name="label" translatable="yes">Welcome!</property>
-            <property name="selectable">True</property>
-            <attributes>
-              <attribute name="weight" value="bold"/>
-              <attribute name="scale" value="2"/>
-            </attributes>
-          </object>
-          <packing>
-            <property name="expand">True</property>
-            <property name="fill">True</property>
-            <property name="position">1</property>
-          </packing>
         </child>
       </object>
     </child>
-    <child type="titlebar">
-      <object class="GtkHeaderBar" id="header_bar">
-        <property name="visible">True</property>
-        <property name="can-focus">False</property>
-        <property name="title">Date of Catholic Easter</property>
-        <property name="show-close-button">True</property>
-        <child>
-          <object class="GtkButton" id="start_browser">
-            <property name="visible">True</property>
-            <property name="can-focus">True</property>
-            <property name="receives-default">True</property>
-            <property name="tooltip-text" translatable="yes">Visit Wikipedia</property>
-            <property name="image">image1</property>
-          </object>
-          <packing>
-            <property name="pack-type">end</property>
-          </packing>
-        </child>
-      </object>
-    </child>
-  </template>
+</template>
 </interface>
